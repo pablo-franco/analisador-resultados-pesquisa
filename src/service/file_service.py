@@ -1,5 +1,5 @@
 from datetime import datetime
-from os import path
+from os import path, makedirs
 
 from src.config.const import results_folder
 
@@ -13,3 +13,9 @@ def export_to_md(search_type, search_text, prompt_text, results):
 
 def generate_file_name():
     return f"{datetime.now().strftime('%Y%Y%Y%Y%m%d%H%M%S')}.md"
+
+def check_folder(folder):
+    if not path.exists(folder):
+        makedirs(folder)
+
+check_folder(results_folder)
