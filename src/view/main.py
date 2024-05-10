@@ -4,6 +4,7 @@ from tkinter.messagebox import showinfo
 from src.service.gemini_service import analyse_search_results
 from src.service.http_service import google_search
 from src.service.file_service import export_to_md
+from src.service.enum import search_type_desc
 
 def show():
     main_window = MainWindow(execute_callback=execute_command, clear_callback=clear_command, export_callback=export_command)
@@ -21,7 +22,7 @@ def clear_command(window:MainWindow):
     window.clear_all()
 
 def export_command(window:MainWindow):
-    search_type = window.get_selected_type()
+    search_type = search_type_desc[window.get_selected_type()]
     search_text = window.get_search_text()
     prompt_text = window.get_prompt_text()
     results = window.get_result_text()
