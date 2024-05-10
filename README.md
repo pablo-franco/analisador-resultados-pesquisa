@@ -1,17 +1,17 @@
 # Analisador de Resultados de Pesquisa
-Ferramenta para analisar os resultados das pesquisas do Google utilizando Gemini AI. 
+Ferramenta para analisar os resultados das pesquisas da Google utilizando Gemini AI. 
 Projeto criado para o desafio da imersão IA Alura + Google
 
 # Cenário
 A maioria dos modelos de linguagem só possuem informações sobre eventos até a data que foram treinados.
-Caso precisarmos solicitar para o modelo algum análise relacionado a fatos recentes, como notícias, eventos, atualizações, etc. o modelo não conseguirá retornar resultados válidos, respondendo que só possui informações até uma data específica.
+Caso precisarmos solicitar para o modelo alguma análise relacionada a fatos recentes, como notícias, eventos, atualizações, etc. o modelo não conseguirá retornar resultados válidos, respondendo que só possui informações até uma data específica.
 
 # Solução proposta
 A solução proposta através deste aplicativo é utilizar os resultados de uma pesquisa no buscador da Google como parte do prompt do modelo de linguagem, e com base nesse contexto solicitar uma análse pontual.
 
 # Como usar
 O aplicativo possui uma interface gráfica que permite o usuário definir as seguintes informações:
-* **Tipo de pesquisa**: O usuário poderá escolher o tipo de pesquisa que deseja realizar no buscador do Google: todas, imagens, notícias ou vídeos
+* **Tipo de pesquisa**: O usuário poderá escolher o tipo de pesquisa que deseja realizar no buscador da Google: todas, imagens, notícias ou vídeos
 * **Texto da pesquisa**: Neste campo o usuário deverá escrever um texto para o qual deseja que o buscador da Google retorne resultados.
 * **Texto do prompt**: Finalmente o usuário terá de escrever um prompt que deverá conter informações precisas do que se espera que o modelo retorne após realizar a análise.
 
