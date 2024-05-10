@@ -12,4 +12,4 @@ def export_to_md(search_type, search_text, prompt_text, results):
     return file_path
 
 def generate_file_name():
-    return f'{datetime.now().strftime('%Y%Y%Y%Y%m%d%H%M%S')}.md'
+    return f"{datetime.now().strftime('%Y%Y%Y%Y%m%d%H%M%S')}.md"
